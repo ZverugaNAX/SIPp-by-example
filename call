@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+# ./call number your_address your_port remote_address:remote_port
+# example
+#  ./call 1000 127.0.0.1 5060 127.0.0.1:5061
+
+sudo sipp -sf Active-Media/uac-active.xml -m 1 -s $1 -i $2 -p $3 $4
+
+
